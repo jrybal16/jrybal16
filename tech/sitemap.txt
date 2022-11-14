@@ -1,0 +1,4 @@
+www.exampledomain.com/gaming.html
+www.exampledomain.com/index.html
+www.exampledomain.com/new.html
+www.exampledomain.com/contact.html

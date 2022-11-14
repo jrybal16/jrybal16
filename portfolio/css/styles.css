@@ -1,0 +1,331 @@
+/*
+Student Name: Justin Haldeman
+File Name: styles.css
+Date: 09/14/2022
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer,img, h1, h3, figure, figcaption, aside {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for box sizing applies to all elements */
+* {
+	box-sizing: border-box;
+}
+
+
+/* Style rules for body and images */
+body {
+	/* Created with https://www.css-gradient.com */
+background: #A3F7AF;
+background: -webkit-linear-gradient(top left, #A3F7AF, #0FAF03);
+background: -moz-linear-gradient(top left, #A3F7AF, #0FAF03);
+background: linear-gradient(to bottom right, #A3F7AF, #0FAF03);
+}
+
+img {
+	max-width: 100%;
+	max-height: 10em;
+	display: block;
+}
+
+/* 	Style rules for skip navigation link */
+.skip {
+	position: relative;
+	float: right;
+	background-color: #fff;
+}
+
+.skip:focus {
+	color: #000;
+	background-color: #fff;
+	text-decoration: none;
+	padding: 0.5%;
+	top: auto;
+	left: auto;
+	right: 1px;
+	z-index: 1;
+}
+
+h1 {
+	font-family: 'DM Mono', monospace;
+	text-align: center;
+	padding: 2%;
+	font-size: 3em;
+	text-shadow: 3px 3px #000;
+}
+
+h3 {
+	text-align: center;
+	font-size: 2em;
+}
+
+/* Style rules for navigation area */
+nav {
+    /* Created with https://www.css-gradient.com */
+background: #EA5D5B;
+background: -webkit-linear-gradient(bottom, #EA5D5B, #D6557E);
+background: -moz-linear-gradient(bottom, #EA5D5B, #D6557E);
+background: linear-gradient(to top, #EA5D5B, #D6557E);
+	text-align: center;
+}
+
+.mobile-nav a {
+	color: #fff;
+	text-align: center;
+	font-size: 2em;
+	text-decoration: none;
+	padding: 3%;
+	display: block;
+}
+
+.mobile-nav a.nav-icon {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: #f6eee4;
+	padding: 2%;
+}
+
+.nav-icon div {
+	height: 40px;
+	width: 40px;
+	color: #2a1f14;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+	font-family: Verdana, Arial, sans-serif;
+} 
+
+main p {
+    font-size: 1.25em;
+}
+
+main ul {
+	list-style-type: square;
+}
+
+.round {
+	border-radius: 6px;
+}
+
+.mobile, .mobile-nav {
+	display: block;
+}
+
+/* Hide tab-desk class */
+.tab-desk, #menu-links {
+	display: none;
+}
+
+/* Style rules for footer content */
+footer {
+	text-align: center;
+	font-size: 0.85em;
+	/* Created with https://www.css-gradient.com */
+background: #EA5D5B;
+background: -webkit-linear-gradient(bottom, #EA5D5B, #D6557E);
+background: -moz-linear-gradient(bottom, #EA5D5B, #D6557E);
+background: linear-gradient(to top, #EA5D5B, #D6557E);
+	color: #fff;
+	padding: 1% 0%;
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+nav li a:hover {
+			color:#000;
+			background-color:#e5e9fc;
+		}
+		
+.para {
+	font-size: 1.5em;
+}
+
+.social img {
+	display: inline-block;
+	padding: 4%;
+}
+
+/* Style rules for tablet viewport */
+
+@media screen and (min-width: 450px), print {
+	
+	.tab-desk {
+		display: block;
+	}
+	
+	.mobile, .mobile-nav {
+		display: none;
+	}
+	header {
+		padding: 2%;
+	}
+	nav ul { 
+	list-style-type: none;
+	margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.5em;
+	font-family: Geneva, Arial, sans-serif;
+	font-weight: bold;
+
+}
+
+nav li a { 
+	display: inline-block;
+	color: #fff;
+	padding: 0.5em 2em;
+	text-decoration: none;
+}
+
+nav li a:hover {
+    color: #2a1f14;
+    background-color: #f6eee4;
+    opacity: 0.8;
+	transform: scale(1.5);
+  }
+	
+	h3 {
+		font-size: 2.5em;
+		text-align: center;
+	}
+	
+	.grid {
+		  display: grid;
+		  grid-template-columns: auto auto;
+		  grid-gap: 10px;
+}
+	aside {
+		grid-column: 1 / span 2;
+}
+
+section {
+	font-size: 2em;
+}
+/* Style rules for table and form */
+	table {
+		border: 1px solid #000;
+		border-collapse: collapse;
+		margin: 0 auto;
+		width: 100%;
+	}
+	
+	caption {
+		font-size: 1.5em;
+		font-weight: bold;
+		padding: 1%;
+	}
+	
+	th, td {
+		border: 1px solid #000;
+		padding: 2%;
+	}
+	
+	th {
+		background-color: #000;
+		color: #fff;
+		font-size: 1.15em;
+	}
+	
+	tr:nth-child(odd) {
+		Background-color: #ccc;
+	}
+	
+	.btn {
+		grid-column: 1 / span 3;
+	}
+	
+	/*Tablet Viewport; Style rule for form element */
+	form {
+		width: 70%;
+		margin: 0 auto;
+	}
+	
+	/* Tablet Viewport: Style rules for footer area */
+	.copyright {
+		float: left;
+		width: 65%;
+		padding: 3%;
+	}
+	
+	.social {
+		float: right;
+		width: 25%;
+		padding: 3%;
+	}
+
+}
+
+
+
+/* Style rules for desktop viewport */
+@media screen and (min-width: 750px), print {
+.mobile {
+	display: none;
+}
+	
+	nav li a:hover {
+			color:#000;
+			background-color:#e5e9fc;
+		}
+	main {
+		font-size: 2em;
+	}
+	
+	footer { 
+		font-size: 1.5em;
+		padding: 1.5%;
+	}
+	
+
+	.grid {
+		  display: grid;
+		  grid-template-columns: auto auto auto auto;
+		  grid-gap: 10px;
+}
+	aside {
+		grid-column: 1 / span 4;
+}
+
+#wel, #welcome, #hello, #welc {
+		border-radius: 10px;
+		border: 5px solid #808080;
+		box-shadow: 10px 10px #000;
+		max-width: 100%;
+		max-height: 10em;
+		display: block;
+		margin: 0 auto;
+}
+}
+
+/* Style rule for large desktop viewport */
+@media screen and (min-width: 1200px), print {
+	
+	nav li {
+		padding: 1em;
+	}
+	
+
+/* Style rule for print */
+@media print {
+	body {
+			background-color: #fff;
+			color: #000;
+		}
+}

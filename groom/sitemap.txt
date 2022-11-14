@@ -1,0 +1,4 @@
+www.exampledomain.com/contact.html
+www.exampledomain.com/index.html
+www.exampledomain.com/mission.html
+www.exampledomain.com/service.html

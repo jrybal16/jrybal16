@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--
+Student Name: Justin Haldeman
+File Name:contact.html
+Date:09/08/2022
+-->
+<html lang="en">
+<head>
+	<title>Contact Us | School Clubs</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Contact us by phone at (814) 555-8989 or email us at contact@shoolclub.net.">
+	<link rel="stylesheet" href="css/styles.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="manifest" href="images/site.webmanifest">
+</head>
+<body>
+<!-- Skip to Content Link -->  
+<a class="skip" href="#content">Skip to Content</a>
+
+<header>
+	<h1>What School Clubs Can Do For You</h1>
+</header>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav">
+	<div id="menu-links">
+		<a href="index.html">Home</a>
+		<a href="about.html">About Us</a>
+		<a href="clubs.html">Clubs</a>
+		<a href="contact.html">Contact Us</a>
+	</div>
+	<a class="nav-icon" onclick="hamburger()">
+		<div id="icon">&#9776;</div>
+	</a>
+</nav>
+
+<nav class= "tab-desk round">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="clubs.html">Clubs</a></li>
+		<li><a href="about.html">About us</a></li>
+		<li><a href="contact.html">Contact us</a></li>
+	</ul>
+</nav>
+<!--Main element should be used to entice students to more active with school programs.-->
+<main id="content">
+
+	<div class="mobile">
+		<p>If you would like more information about what clubs we offer, or to talk to us about creating a new club, contact us at <a href="mailto:contact@schoolclub.net">contact@schoolclub.net"</a></p>
+		<p>Phone:(814) 555-8989</p>
+	</div>	
+		
+	<div class="tab-desk" id="contact">
+	<h3>Contact us</h3>
+		<p>We offer clubs for every age the schools allow from:</p>
+			<ul>
+				<li>8th grade</li>
+				<li>9th grade</li>
+				<li>10th grade</li>
+				<li>11th grade</li>
+				<li>12th grade</li>
+			</ul>
+		
+		<p>If you would like more information about what clubs we offer, or to talk to us about creating a new club, contact us at <a href="mailto:contact@schoolclub.net">contact@schoolclub.net"</a></p>
+		<p>Phone:(814) 555-8989</p>
+	<figure>
+		<img class="round tab-desk" src="images/students-working-together.jpg" alt="students working at desk together">
+	</figure>
+	
+	</div>
+	
+	<div id="form">
+		<h2>Complete the form below for more information</h2>
+			<form class="form-grid"> <!-- Start Form -->
+				
+				<fieldset class="info">
+					<legend>Contact Information</legend>
+					<label for="fName">First Name:</label>
+					<input type="text" name="fName" id="fName">
+					
+					<label for="lName">Last Name:</label>
+					<input type="text" name="lName" id="lName" required>
+					
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" required>
+					
+					<label for="phone">Phone:</label>
+					<input type="tel" name="phone" id="phone">
+					<input type="submit" id="submit2" value="Submit" class="btn">
+				</fieldset>
+				
+				<fieldset>
+					<legend>Have any questions?</legend>
+					
+					<textarea name="questions" id="questions" rows="6" cols="40"></textarea>
+					
+					<input type="submit" id="submit" value="Submit" class="btn">
+					
+				</fieldset>
+				
+			</form>
+	</div>		
+</main>
+
+<footer>
+	<div class="copyright">
+		<p>&copy; Copyright 2021. All Rights Reserved.</p>
+		<p>contact@shoolclub.net</p>
+	</div>
+
+<div class="social">
+      <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="Facebook logo"></a>
+      <a href="https://www.twitter.com" target="_blank"><img src="images/twitter-logo.png" alt="Twitter logo"></a>
+    </div>
+</footer>
+	<script src="scripts/script.js"></script>
+</body>
+
+</html>

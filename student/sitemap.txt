@@ -1,0 +1,4 @@
+www.exampledomain.com/about.html
+www.exampledomain.com/contact.html
+www.exampledomain.com/clubs.html
+www.exampledomain.com/index.html

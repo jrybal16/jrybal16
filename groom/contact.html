@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+Student Name: Justin Haldeman
+File Name:contact.html
+Date:09/08/2022
+-->
+<html lang="en">
+<head>
+	<title>Fluffy Grooming | Contact Us</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Fluffy Grooming phone number is (801)915-6080 or email us at grooming@dogs.net.">
+	<link rel="stylesheet" href="css/styles.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Emblema+One&display=swap" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="manifest" href="images/site.webmanifest">
+</head>
+
+<body>
+<!-- Skip to Content Link -->  
+<a class="skip" href="#content">Skip to Content</a>
+
+<header>
+	<h1>Fluffy Grooming</h1>
+	<img id="banner" class="round" src="images/dog-banner.jpg" alt="multiple dogs faces next to each other">
+</header>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav">
+	<div id="menu-links">
+		<a href="index.html">Home</a>
+		<a href="service.html">Services</a>
+		<a href="mission.html">Mission</a>
+		<a href="contact.html">Contact Us</a>
+	</div>
+	<a class="nav-icon" onclick="hamburger()">
+		<div id="icon">&#9776;</div>
+	</a>
+</nav>
+
+<nav class="tab-desk">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="service.html">Services</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li><a href="mission.html">Mission</a></li>
+	</ul>
+</nav>
+
+<h3>We are here to care for your pets hygenic care</h3>
+
+<!--To build a website for a animal grooming business.-->
+<main id="content">
+		<div id="contacts">
+			<p>Call us (801) 915-6080</p>
+			<p>Address is: 3645 W 112th Ave, Westminster, CO 80031</p>
+			<p>Email us <a href="mailto:grooming@dogs.net" target="_blank">grooming@dogs.net</a></p>
+		
+		
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.787873591669!2d-105.03944204899736!3d39.9013813793274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b8a05dfb658a5%3A0x9c44d055089c9189!2sFront%20Range%20Community%20College!5e0!3m2!1sen!2sus!4v1662671358492!5m2!1sen!2sus"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+		
+		
+		<form class="form-grid"><!-- Start Form -->
+			<div>
+				<fieldset>
+					<legend>Customer Information</legend>
+					<label for="fName">First Name:</label>
+					<input type="text" name="fName" id="fName" required>
+					
+					<label for="1Name">Last Name:</label>
+					<input type="text" name="1Name" id="1Name" required>
+				
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" required>
+					
+					<label for="phone">Phone:</label>
+					<input type="tel" id="phone" name="phone" required>
+				</fieldset>
+			</div>
+				
+			<div>
+				<fieldset>
+					<legend>Referral Source</legend>
+					<label for="reference">How did you find us?</label>
+					<select name="reference" id="reference">
+						<option value="ad">Advertisement</option>
+						<option value="friend">Friend</option>
+						<option value="google">Google</option>
+						<option value="social">Social Media</option>
+						<option value="other">Other</option>
+					</select>
+				</fieldset>
+			</div>
+			
+			<div>			
+					<fieldset><legend>Questions?</legend>
+					<textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+				</fieldset>
+				
+				<input type="submit" id="submit" value="submit" class="btn">
+			</div>		
+		</form>
+</main>
+
+<footer class="round">
+	<div class="copyright">
+		<p>&copy; Copyright 2021. All Rights Reserved.</p>
+		<p>Email us <a href="mailto:grooming@dogs.net" target="_blank">grooming@dogs.net</a></p>
+	</div>
+	
+	<div class="social">
+      <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="Facebook logo"></a>
+      <a href="https://www.twitter.com" target="_blank"><img src="images/twitter-logo.png" alt="Twitter logo"></a>
+    </div>
+</footer>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>

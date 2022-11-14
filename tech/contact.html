@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--
+Student Name: Justin Haldeman
+File Name:contact.html
+Date:10/12/2022
+-->
+<html lang="en">
+<head>
+	<title>The Tech | Contact Us</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Email us at techinfo.net for any questions.">
+	<link rel="stylesheet" href="css/styles.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="manifest" href="images/site.webmanifest">
+</head>
+<body>
+<!-- Skip to Content Link -->  
+<a class="skip" href="#content">Skip to Content</a>
+
+<header>
+	<img id="banner" src="images/techbanner.jpg" alt="colors of light">
+</header>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav">
+	<div id="menu-links">
+		<a href="index.html">Home</a>
+		<a href="new.html">New This Week</a>
+		<a href="gaming.html">Gaming</a>
+		<a href="contact.html">Contact Us</a>
+	</div>
+	<a class="nav-icon" onclick="hamburger()">
+		<div id="icon">&#9776;</div>
+	</a>
+</nav>
+
+<nav class="tab-desk">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="new.html">New This Week</a></li>
+		<li><a href="gaming.html">Gaming</a></li>
+		<li><a href="contact.html">Contact Us</a></li>
+	</ul>
+</nav>
+<!--Showcase different advancements in technology-->
+<main id="content">
+	<div>
+		<h1>Advancements in Tech</h1>
+		<h3>Showcasing the Newest Technologies</h3>
+	</div>
+	
+	
+<section class="contact">
+			<p>Contact us with any question or comments</p>
+		<h2>You can reach us at:</h2>
+			<p class="tel-link round mobile tab-desk">Call us at:<a href="8145558989">(814) 555-8989</a></p>
+			<p>Email us at: <a href="mailto:contact@newtech.net" class="link">contact@newtech.net</a></p>
+			<p>Address: <a href="https://goo.gl/maps/Phk8ps5pWJLQ6xfh6" target="_blank" class="link">368 N Prospect St, Orange, CA 92866</a></p>
+</section>
+
+	<div id="form">
+		
+			<h2>Complete the form below to begin your free trial.</h2>
+			
+			<form class="form-grid"><!-- Start Form -->
+			
+				<fieldset>
+					<legend>Customer Information</legend>
+					<label for="fName">First Name:</label>
+					<input type="text" name="fName" id="fName" required>
+					
+					<label for="1Name">Last Name:</label>
+					<input type="text" name="1Name" id="1Name" required>
+				
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" required>
+					
+					<label for="phone">Phone:</label>
+					<input type="tel" id="phone" name="phone" required>
+				</fieldset>
+				
+				<fieldset class="tab-desk">
+					<legend>Additional Information</legend>
+					<p>I would like more information about:</p>
+					
+					<label for="gaming"><input type="checkbox" name="interest" id="gaming" value="Gaming">Gaming</label>
+					
+					<label for="iot"><input type="checkbox" name="interest" id="iot" value="IOT">Internet of Things</label>
+					
+					<label for="new"><input type="checkbox" name="interest" id="new" value="New Tech">New Tech</label>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Referral Source</legend>
+					<label for="reference">How did you find us?</label>
+					<select name="reference" id="reference">
+						<option value="ad">Advertisement</option>
+						<option value="friend">Friend</option>
+						<option value="google">Google</option>
+						<option value="social">Social Media</option>
+						<option value="other">Other</option>
+					</select>
+				</fieldset>
+
+				<fieldset>
+					<label for="questions">Questions?</label>
+					<textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+				</fieldset>
+				
+				<input type="submit" id="submit" value="submit" class="btn">
+					
+			</form>
+		</div>
+</main>
+
+<footer>
+	<div class="copyright">
+		<p>&copy; Copyright 2021. All Rights Reserved.</p>
+		<p>Email <a href="mailto:techinfo@tch.net"> techinfo.net</a></p>
+	</div>
+	
+	<div class="social">
+      <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="Facebook logo"></a>
+      <a href="https://www.twitter.com" target="_blank"><img src="images/twitter-logo.png" alt="Twitter logo"></a>
+    </div>
+</footer>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--
+Student Name: Justin Haldeman
+File Name:contact.html
+Date:09/08/2022
+-->
+<html lang="en">
+<head>
+	<title>Contact Us | Justin's Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Contact Justin at (801)915-6080, or email me at justinrybal@yahoo.com.">
+	<link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="manifest" href="images/site.webmanifest">
+</head>
+<body>
+<!-- Skip to Content Link -->  
+<a class="skip" href="#content">Skip to Content</a>
+
+<header>
+	<h1>Justin Haldeman</h1>
+	<h3>Learning to Build Websites.</h3>
+	
+</header>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav">
+	<div id="menu-links">
+		<a href="index.html">Home</a>
+		<a href="project.html">Project</a>
+		<a href="programs.html">Programs</a>
+		<a href="contact.html">Contact Us</a>
+	</div>
+	<a class="nav-icon" onclick="hamburger()">
+		<div id="icon">&#9776;</div>
+	</a>
+</nav>
+
+<nav class="tab-desk">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="project.html">Projects</a></li>
+		<li><a href="programs.html">Programs Used</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+</nav>
+<div class="tab-desk">
+	<img id="welcome" class="round" src="images/haldeman.jpg" alt="justin and jake sitting by hanging lake">
+</div>
+
+<!--Show off the different skills I have learned so far in web design.-->
+<main id="content">
+	<div class="contact">
+	
+		<p>Phone: (801) 915-6080</p>
+	
+		<p>Contact <a href="mailto:jrybal@mycourses-mail.cccs.edu"></a>jrybal@mycourses-mail.cccs.edu</p>
+		
+		
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.787873591669!2d-105.03944204899736!3d39.9013813793274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b8a05dfb658a5%3A0x9c44d055089c9189!2sFront%20Range%20Community%20College!5e0!3m2!1sen!2sus!4v1662668104365!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+	</div>
+	
+	<div id="form">
+		<h2>Complete the form below and we will contact you soon.</h2>
+			<form class="form-grid"> <!-- Start Form -->
+				
+				<fieldset>
+					<legend>Contact Information</legend>
+					<label for="fName">First Name:</label>
+					<input type="text" name="fName" id="fName">
+					
+					<label for="lName">Last Name:</label>
+					<input type="text" name="lName" id="lName">
+					
+					
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email">
+					
+					<label for="phone">Phone:</label>
+					<input type="tel" name="phone" id="phone">
+					
+					<label for="bName">Name of Business:</label>
+					<input type="text" name="bName" id="bName">
+					
+					<input type="submit" id="submit" value="Submit" class="btn">
+					
+				</fieldset>
+				
+				
+				
+				<fieldset>
+					<legend>Have any questions?</legend>
+					
+					<textarea name="questions" id="questions" rows="6" cols="42"></textarea>
+					
+					
+					<input type="submit" id="submit" value="Submit" class="btn">
+				</fieldset>
+		</div>
+</main>
+
+<footer>
+	<div class="copyright">
+		<p>&copy; Copyright 2021. All Rights Reserved.</p>
+		<p>Contact <a href="mailto:jrybal@mycourses-mail.cccs.edu"></a>jrybal@mycourses-mail.cccs.edu</p>
+	</div>
+	
+	<div class="social">
+      <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="Facebook logo"></a>
+      <a href="https://www.twitter.com" target="_blank"><img src="images/twitter-logo.png" alt="Twitter logo"></a>
+    </div>
+</footer>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--
+Student Name: Justin Haldeman
+File Name:template.html
+Date:09/02/2022
+-->
+<html lang="en">
+<head>
+	<title>Clubs | School Clubs</title>
+	<meta charset="utf-8">
+	<meta name="description" content="The different clubs we offer such as Chess, Math, Science, and Gardening.">
+	<link rel="stylesheet" href="css/styles.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="manifest" href="images/site.webmanifest">
+</head>
+
+<body>
+<!-- Skip to Content Link -->  
+<a class="skip" href="#content">Skip to Content</a>
+
+<header>
+	<h1>What School Clubs Can Do For You</h1>
+</header>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav">
+	<div id="menu-links">
+		<a href="index.html">Home</a>
+		<a href="about.html">About Us</a>
+		<a href="clubs.html">Clubs</a>
+		<a href="contact.html">Contact Us</a>
+	</div>
+	<a class="nav-icon" onclick="hamburger()">
+		<div id="icon">&#9776;</div>
+	</a>
+</nav>
+
+<nav class="tab-desk round">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="clubs.html">Clubs</a></li>
+		<li><a href="about.html">About us</a></li>
+		<li><a href="contact.html">Contact us</a></li>
+	</ul>
+</nav>
+
+<section>
+	<p id="club">Are you looking to get more involved in school clubs? Look no further we offer several different clubs for various subjects like chess, sports, academic, and many more!</p>
+</section>
+
+<!--Main element should be used to entice students to more active with school programs.-->
+<main class="grid" id="content">
+
+	<figure>
+		<img src="images/gardening.jpg" alt="people working a small garden">
+		<figcaption>Learn Gardening</figcaption>
+	</figure>
+	
+	<figure>
+		<img src="images/chess.jpg" alt="people playing chess">
+		<figcaption>Learn Chess</figcaption>
+	</figure>
+	
+	<figure>
+		<img src="images/science.jpg" alt="people working on scirence experiment">
+		<figcaption>Science Experiments</figcaption>
+	</figure>
+
+	<figure>
+		<img src="images/math.jpg" alt="students collaberating over math paper">
+		<figcaption>Math Club</figcaption>
+	</figure>
+</main>
+
+	<div class="mobile" id="mob">
+		<h3>Club Details</h3>
+			<p>Math M,W 3:00pm</p>
+			<p>Science TH 4:30pm</p>
+			<p>Farm M, F 2:45pm</p>
+			<p>Chess T F 3:15pm</p>
+	</div>
+
+	<div class="tab-desk" "table-grid">
+	     <table>
+         <caption>Club Details</caption>
+         <tr>
+            <th>Class</th>
+            <th colspan="5">Grades 10-12</th>
+          </tr>
+
+          <tr>
+              <th>Details</th>
+			  <th>Day</th>
+              <th>Time</th>
+              <th>Room</th>
+              <th>Occupancy</th>
+              <th>Fee</th>
+          </tr>
+
+          <tr>
+              <th>Math</th>
+			  <td>M W</td>
+              <td>3:00pm</td>
+              <td>Room 105</td>
+              <td>20</td>
+              <td>$50</td>
+          </tr>
+
+          <tr>
+              <th>Science</th>
+			  <td>TH</td>
+              <td>4:30pm</td>
+              <td>Room 215</td>
+              <td>25</td>
+              <td>$50</td>
+          </tr>
+
+          <tr>
+              <th>Farm</th>
+			  <td>M W</td>
+              <td>2:45pm</td>
+              <td>Room 435</td>
+              <td>15</td>
+              <td>$125</td>
+          </tr>
+		  
+		  <tr>
+              <th>Chess</th>
+			  <td>T F</td>
+              <td>3:15pm</td>
+              <td>Room 133</td>
+              <td>30</td>
+              <td>$15</td>
+          </tr>
+
+         </table>
+	</div>
+<footer>
+	<div class="copyright">
+		<p>&copy; Copyright 2021. All Rights Reserved.</p>
+		<p>contact@shoolclub.net</p>
+	</div>
+
+<div class="social">
+      <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="Facebook logo"></a>
+      <a href="https://www.twitter.com" target="_blank"><img src="images/twitter-logo.png" alt="Twitter logo"></a>
+    </div>
+</footer>
+
+</body>
+	<script src="scripts/script.js"></script>
+
+</html>

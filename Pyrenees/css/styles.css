@@ -1,0 +1,280 @@
+/* 
+Student Name: Justin Haldeman
+File Name: styles.css
+Date: 9/22/2022
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, ul, nav ul, nav li, img, table, fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for box sizing applies to all elements */
+* {
+	box-sizing: border-box;
+}
+
+/* 	Style rules for skip navigation link */
+.skip {
+	position: relative;
+	float: right;
+	background-color: #fff;
+}
+
+.skip:focus {
+	color: #000;
+	background-color: #fff;
+	text-decoration: none;
+	padding: 0.5%;
+	top: auto;
+	left: auto;
+	right: 1px;
+	z-index: 1;
+}
+
+body {
+	background-color: #7ea1ad;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1.5em;
+	min-width: 100%;
+}
+
+header {
+	display: block;
+	color: black;
+	max-width: 100%;
+	background-color: #7ea1ad;
+	font-size: 1.5em;
+	text-align: center;
+	padding: 1em;
+}
+
+nav {
+	background-color: #d08251;
+	text-decoration: none;
+}
+
+nav ul { 
+	list-style-type: none;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.5em;
+	font-family: verdana;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 3px;
+	text-align: center;
+}
+
+nav li a { 
+	display: block;
+	color: #f6eee4;
+	padding: 0.5em 0.3em;
+	text-decoration: none;
+	text-align: left;
+}
+img {
+	max-width: 100%;
+	display: block;
+}
+
+
+h3 {
+	text-align: center;
+	font-size: .8em;
+}
+
+h2 {
+	text-align: center;
+	font-size: 1em;
+}
+
+h1 {
+	font-size: 60px;
+}
+
+main {
+	font-size: 1.5em;
+	display: block;
+	padding: .5em;
+}
+
+.logo {
+	float: left;
+}
+
+.round {
+	border-radius: 6px;
+	background-color: #d08251;
+}
+.mobile {
+	display: block;
+}
+
+.tab-desk {
+	display: none;
+}
+
+.vol {
+	text-align: center;
+}
+
+.tel-link {
+	background-color: #404040;
+	padding: 2%;
+	margin: 0 auto;
+	width: 60%;
+	text-align: center;
+	border-radius: 2px;
+}
+
+.tel-link a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1em;
+	display: block;
+}
+	
+footer {
+	display: block;
+	background-color: #d08251;
+	text-align: center;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+#foot {
+	background-color: #d08251;
+}
+
+/* unvisited link */
+a:link {
+	color: black;
+}
+
+/* visited link */
+a:visited {
+	color: blue;
+}
+
+.social img {
+	display: inline-block;
+	padding: 2%;
+}
+
+/* Viewport for tablet */
+@media screen and (min-width: 450px), print {
+	
+	.tab-desk {
+		display: block;
+	}
+	
+	.mobile {
+		display: none;
+	}
+	.grid {
+		  display: grid;
+		  grid-template-columns: auto auto auto;
+		  grid-gap: 10px;
+	}
+	
+	figure {
+	position: relative;
+	max-width: 100%;
+	margin: 1% auto;
+	border: 8px solid #373684;
+}
+
+	/* Style rules for table and form */
+	table {
+		border: 1px solid #000;
+		border-collapse: collapse;
+		margin: 0 auto;
+		width: 60%;
+	
+	}
+	
+	.table {
+		max-width: 60%;
+	}
+	
+	caption {
+		font-size: 1.5em;
+		font-weight: bold;
+		padding: 1%;
+	}
+	
+	th, td {
+		border: 1px solid #000;
+		padding: 2%;
+	}
+	
+	th {
+		background-color: #000;
+		color: #fff;
+		font-size: 1.15em;
+	}
+	
+	tr:nth-child(odd) {
+		Background-color: #ccc;
+	}
+	
+	.btn {
+		grid-column: 1 / span 3;
+	}
+	
+	/* Tablet Viewport: Style rules for footer area */
+	.copyright {
+		float: left;
+		width: 65%;
+		padding: 3%;
+	}
+	
+	.social {
+		float: right;
+		width: 25%;
+		padding: 3%;
+	}
+		
+}
+
+/* Style rule for desktop viewport */
+@media screen and (min-width: 850px), print {
+	
+	.tab-desk {
+		display: block;
+	}
+	
+	.mobile {
+		display: none;
+	}
+	.grid {
+		  display: grid;
+		  grid-template-columns: auto auto auto auto;
+		  grid-gap: 10px;
+	}
+	nav li {
+		padding: 1em;
+	}
+	
+	footer {
+		background-color: #d08251;
+	}
+}
+
+/* Style rule for print */
+@media print {
+	body {
+			background-color: #fff;
+			color: #000;
+		}
+}
