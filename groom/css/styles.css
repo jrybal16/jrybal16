@@ -110,8 +110,8 @@ nav {
 }
 
 .nav-icon div {
-	height: 40px;
-	width: 40px;
+	height: 20px;
+	width: 20px;
 	color: #2a1f14;
 }
 
@@ -121,8 +121,6 @@ nav {
 main {
     padding: 2%;
 	font-family: 'Emblema One', cursive;
-	
-
 } 
 
 main p {
@@ -140,20 +138,28 @@ main ul {
 
 /* Style rules for footer content */
 footer {
-	
 	text-align: center;
-	font-size: 1.4em;
+	font-size: 1em;
 	background-color: #fbda64;
 	color: #000;
-	padding: 1% 0%;
 	background: linear-gradient(to right, #953ddc, #8a01f8);
+}
+
+footer .copyright {
+	font-size: 0.75em;
+	text-align: center;
+	color: #fff;
+	padding: 2% 4%;
+	float: left;
+	width: 75%;
+		background: linear-gradient(to right, #953ddc, #8a01f8);
 }
 
 footer a {
 	color: #1313ed;
 	text-decoration: none;
+		background: linear-gradient(to right, #953ddc, #8a01f8);
 }
-
 
 a:link {
 	text-decoration: none;
@@ -170,9 +176,15 @@ a:link {
 	width: 50%;
 }
 
+.social {
+	float: right;
+	width: 20%;
+	padding: 2%;
+}
+
 .social img {
 	display: inline-block;
-	padding: 2%;
+	padding: 5%;
 }
 
 

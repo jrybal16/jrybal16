@@ -17,23 +17,41 @@
 	<link rel="manifest" href="images/site.webmanifest">
 </head>
 <body>
-<!-- Skip to Content Link -->  
-<a class="skip" href="#content">Skip to Content</a>
+    <!-- Skip to Content Link -->  
+	<a class="skip" href="#content">Skip to Content</a>
 
-<header>
-	<img class="logo" src="images/paw-logo.png" alt="dogs paw print">
-		<h1>Great Pyrenees Rescue</h1>
-</header>
+<!-- Mobile Nav -->
+	<nav class="mobile-nav">
+		<div id="menu-links">
+			<a href="index.html">Home</a>
+			<a href="about.html">About Us</a>
+			<a href="adopt.html">Adopt</a>
+			<a href="volunteer.html">Volunteer</a>
+			<a href="contact.html">Contact Us</a>
+		</div>
+		<a class="nav-icon" onclick="hamburger()">
+			<div id="icon">&#9776;</div>
+		</a>
+	</nav>
 
-<nav class="round">
-	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="about.html">About Us</a></li>
-		<li><a href="adopt.html">Adopt</a></li>
-		<li><a href="volunteer.html">Volunteer</a></li>
-		<li><a href="contact.html">Contact</a></li>
-	</ul>
-</nav>
+	<div>
+		<header>
+			<img class="logo" src="images/paw-logo.png" alt="dogs paw print">
+			<h1>Great Pyrenees Rescue</h1>
+		</header>
+	</div>
+
+<div class="nav-div">
+	<nav class="round tab-desk">
+		<ul>
+			<li><a href="index.html">Home </a></li>
+			<li><a href="about.html">About Us </a></li>
+			<li><a href="adopt.html">Adopt</a></li>
+			<li><a href="volunteer.html">Volunteer</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+</div>
 
 <!-- Hero Image -->
 <!--<div id=>
@@ -45,9 +63,9 @@
 	<div> 
 		<h2>Welcome to Colorado Great Pyrenees Rescue.</h2>
 		
-		<p>If you are looking to get involved, we are always looking for volunteers.</p>
+		<p class="center">If you are looking to get involved, we are always looking for volunteers.</p>
 		
-		<p>There several ways to volunteer depending on what level of involvement your looking for, such as:</p>
+		<p class="center">There several ways to volunteer depending on what level of involvement your looking for, such as:</p>
 			<ul class="vol">
 				<li>Volunteering your time with the animals</li>
 				<li>Donating to our great cause</li>
@@ -58,93 +76,70 @@
 	
 	<div class="tab-desk">
 	     <table class="table">
-       <caption></caption>
-         <tr>
+       <caption>Donation Levels</caption>
+       
+          <tr>
+              <th>Great Pyrenees Rescue</th>
+			  <th>Donation Amount</th>
+              <th>Details</th>
+			  <th>Benefits</th>
+             
+          </tr>
+
+          <tr>
+              <td class="color">Purple</td>
+			  <td>$100</td>
+              <td>Helps us afford quality food for our animals.</td>
+			  <td>You will be on our website as a donor and will recieve a picture of the dog you helped. And you will get our annual Great Pyrenees Rescue calendar. </td>
             
-            <th colspan="6">Donating Levels</th>
-          </tr>
-
-          <tr>
-              <th rowspan="2">Brand</th>
-			  <th>AMD Radeon RX 6000</th>
-              <th>GeForce RTX 3060</th>
-			  <th>GeForce RTX 3080</th>
-              <th>GeForce RTX 3080 Ti</th>
-			  <th>Nvidia Titan RTX</th>
-          </tr>
-
-          <tr>
-              
-			  <td>XFX</td>
-              <td>GeForce</td>
-			  <td>GeForce</td>
-              <td>GeForce</td>
-			  <td>Nvidia</td>
           </tr>
 
            <tr>
-              <th>Gigabyte</th>
-			  <td>16gb</td>
-              <td>12gb</td>
-			  <td>12gb</td>
-              <td>12gb</td>
-			  <td>24gb</td>
+              <td class="color">Green</td>
+			  <td>$200</td>
+              <td>Help's us keep the lights on at our facility, and provide shelter for our animals.</td>
+			  <td>You will be on our website as a donor and will recieve a picture of the dog you helped. And you will get our annual Great Pyrenees Rescue calendar. Plus get a custom leash and collar from GPR.</td>
           </tr>
 
            <tr>
-              <th>Core Clock</th>
-			  <td>1825MHz</td>
-              <td>1807MHz</td>
-			  <td>1740MHz</td>
-              <td>1700MHz</td>
-			  <td>1350MHz</td>
+              <td class="color">White</td>
+			  <td>$300</td>
+              <td>This helps pay for our staff to ensure we have enough people to take care of all the animals coming and going.</td>
+			  <td>You will be on our website as a donor and will recieve a picture of the dog you helped. And you will get our annual Great Pyrenees Rescue calendar. Plus get a custom leash and collar from GPR. Put on a plaque in our facility for everyone to see.</td>
           </tr>
 		  
 		  <tr>
-              <th>Boost Clock</th>
-			  <td>2250MHz</td>
-              <td>-</td>
-			  <td>-</td>
-              <td>1800MHz</td>
-			  <td>1770MHz</td>
+              <td class="color">Silver</td>
+			  <td>$400</td>
+              <td>Help us pay for transportation costs and the cost of our facility.</td>
+			  <td>You will be on our website as a donor and will recieve a picture of the dog you helped. And you will get our annual Great Pyrenees Rescue calendar. Plus get a custom leash and collar from GPR. Put on a plaque in our facility for everyone to see. Will send you a complimentary GPR logo t-shirt and hoodie.</td>
           </tr>
 		  
 		 <tr>
-              <th>HDMI</th>
-			  <td>1x</td>
-              <td>2x</td>
-			  <td>1x</td>
-              <td>1x</td>
-			  <td>1x</td>
+              <td class="color">Gold</td>
+			  <td>$500</td>
+              <td>This tier helps us pay for medical issues and urgent care.</td>
+			  <td>You will be on our website as a donor and will recieve a picture of the dog you helped. And you will get our annual Great Pyrenees Rescue calendar. Plus get a custom leash and collar from GPR. Put on a plaque in our facility for everyone to see. Will send you a complimentary GPR logo t-shirt and hoodie. Get to come to our Gold tier gala held annually</td>
           </tr>
-		  
-		 <tr>
-              <th>Stream Processing</th>
-			  <td>5120 SP</td>
-              <td>3584 Cuda Cores</td>
-			  <td>8960 Cuda Cores</td>
-              <td>10240 Cuda Cores</td>
-			  <td>4608 Cuda Cores</td>
-          </tr>
-		  
-		 
-
+		
          </table>
 	</div>
 </main>
 
-<footer class="round">
+<footer class="round" id="foot">
 	<div class="copyright">
 		<p>&copy; Copyright 2022. All Rights Reserved.</p>
 		<p> Email us at:<a href="mailto:greatpyrrescue.net " target="_blank"> greatpyrrescue.net</a></p>
 	</div>
 	
 	<div class="social">
-      <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="Facebook logo"></a>
-      <a href="https://www.twitter.com" target="_blank"><img src="images/twitter-logo.png" alt="Twitter logo"></a>
-    </div>
+			<a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="black and white Facebook logo"></a>
+			<a href="https://twitter.com" target="_blank"><img src="images/twitter-logo.png" alt="black and white Twitter logo"></a>
+		</div>
+		
 </footer>
-
+<script src="scripts/script.js"></script>
 </body>
+
 
 </html>

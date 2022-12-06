@@ -38,7 +38,6 @@ body {
 	background-color: #7ea1ad;
 	font-family: Verdana, Arial, sans-serif;
 	font-size: 1.5em;
-	min-width: 100%;
 }
 
 header {
@@ -51,7 +50,147 @@ header {
 	padding: 1em;
 }
 
-nav {
+.mobile-nav a {
+	color: #fff;
+	text-align: center;
+	font-size: 2em;
+	text-decoration: none;
+	display: block;
+	background-color: #7ea1ad;
+}
+
+.mobile-nav a.nav-icon {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: #f6eee4;
+}
+
+.nav-icon div {
+	height: 40px;
+	width: 40px;
+	color: #2a1f14;
+	
+}
+
+img, video {
+	width: 100%;
+	display: block;
+}
+
+h3 {
+	text-align: center;
+	font-size: .8em;
+}
+
+h2 {
+	text-align: center;
+	font-size: 1em;
+}
+
+h1 {
+	font-size: 60px;
+}
+
+main {
+	font-size: 1.5em;
+	display: block;
+	padding: .5em;
+}
+
+.logo {
+	float: left;
+	width: 5em;
+}
+
+.round {
+	border-radius: 6px;
+	background-color: #d08251;
+}
+.mobile, .mobile-nav {
+	display: block;
+}
+
+.tab-desk, #menu-links {
+	display: none;
+}
+
+.vol {
+	text-align: center;
+}
+
+.tel-link {
+	background-color: #404040;
+	padding: 2%;
+	margin: 0 auto;
+	width: 60%;
+	text-align: center;
+	border-radius: 2px;
+}
+
+.tel-link a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1em;
+	display: block;
+}
+	
+footer {
+	font-size: 1em;
+	background-color: #d08251;
+	text-align: center;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+#foot {
+	background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,0.663978494623656) 0%, rgba(188,112,17,1) 35%);
+	display: inline-block;
+	font-size: 1em;
+}
+
+/* unvisited link */
+a:link {
+	color: black;
+}
+
+/* visited link */
+a:visited {
+	color: blue;
+}
+
+.social {
+	float: right;
+	width: 20%;
+	padding: 2%;
+}
+
+.social img {
+	display: inline-block;
+	padding: 5%;
+}
+
+/* Viewport for tablet */
+@media screen and (min-width: 450px), print {
+	
+	.nav-div {
+		max-width: 100%;
+		
+	}
+	
+	.tab-desk {
+		display: block;
+	}
+	
+	.mobile, .mobile-nav {
+		display: none;
+	}
+	
+	nav {
 	background-color: #d08251;
 	text-decoration: none;
 }
@@ -80,131 +219,34 @@ nav li a {
 	text-decoration: none;
 	text-align: left;
 }
-img {
-	max-width: 100%;
-	display: block;
-}
 
-
-h3 {
-	text-align: center;
-	font-size: .8em;
-}
-
-h2 {
-	text-align: center;
-	font-size: 1em;
-}
-
-h1 {
-	font-size: 60px;
-}
-
-main {
-	font-size: 1.5em;
-	display: block;
-	padding: .5em;
-}
-
-.logo {
-	float: left;
-}
-
-.round {
-	border-radius: 6px;
-	background-color: #d08251;
-}
-.mobile {
-	display: block;
-}
-
-.tab-desk {
-	display: none;
-}
-
-.vol {
-	text-align: center;
-}
-
-.tel-link {
-	background-color: #404040;
-	padding: 2%;
-	margin: 0 auto;
-	width: 60%;
-	text-align: center;
-	border-radius: 2px;
-}
-
-.tel-link a {
-	color: #fff;
-	text-decoration: none;
-	font-size: 1em;
-	display: block;
-}
-	
-footer {
-	display: block;
-	background-color: #d08251;
-	text-align: center;
-}
-
-footer a {
-	text-decoration: none;
-}
-
-#foot {
-	background-color: #d08251;
-}
-
-/* unvisited link */
-a:link {
-	color: black;
-}
-
-/* visited link */
-a:visited {
-	color: blue;
-}
-
-.social img {
-	display: inline-block;
-	padding: 2%;
-}
-
-/* Viewport for tablet */
-@media screen and (min-width: 450px), print {
-	
-	.tab-desk {
-		display: block;
-	}
-	
-	.mobile {
-		display: none;
-	}
-	.grid {
-		  display: grid;
-		  grid-template-columns: auto auto auto;
-		  grid-gap: 10px;
+	.pic {
+		margin: 0 auto;
+		
 	}
 	
 	figure {
-	position: relative;
-	max-width: 100%;
-	margin: 1% auto;
 	border: 8px solid #373684;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px;
+	overflow: hidden;
 }
 
+	#dick {
+		padding: 0;
+	}
+
 	/* Style rules for table and form */
-	table {
+	.table {
 		border: 1px solid #000;
 		border-collapse: collapse;
 		margin: 0 auto;
 		width: 60%;
-	
 	}
 	
-	.table {
-		max-width: 60%;
+	.donation {
+		background-color: teal;
 	}
 	
 	caption {
@@ -224,12 +266,30 @@ a:visited {
 		font-size: 1.15em;
 	}
 	
+	.center {
+		text-align: center;
+	}
+	
+	.color {
+		background-color: black;
+		color: white;
+		font-size: 1.15em;
+		font-family: Verdana, Arial, sans-serif;
+		font-weight: bold;
+	}
+	
 	tr:nth-child(odd) {
 		Background-color: #ccc;
 	}
 	
 	.btn {
 		grid-column: 1 / span 3;
+	}
+	
+	#foot {
+		background-color: #d08251;
+		min-width: 100%;
+		max-height: 12em;
 	}
 	
 	/* Tablet Viewport: Style rules for footer area */
@@ -241,7 +301,7 @@ a:visited {
 	
 	.social {
 		float: right;
-		width: 25%;
+		width: 15%;
 		padding: 3%;
 	}
 		
@@ -259,7 +319,7 @@ a:visited {
 	}
 	.grid {
 		  display: grid;
-		  grid-template-columns: auto auto auto auto;
+		  grid-template-columns: auto auto auto;
 		  grid-gap: 10px;
 	}
 	nav li {

@@ -8,7 +8,7 @@
 <head>
 	<title>Colorado Pyrenees Rescue | Contact Us</title>
 	<meta charset="utf-8">
-	<meta name="description content="Our phone number is (888) 777-1234 and our email is greatpyrrescue.net.">
+	<meta name="description" content="Our phone number is (888) 777-1234 and our email is greatpyrrescue.net.">
 	<link rel="stylesheet" href="css/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
@@ -16,30 +16,43 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 	<link rel="manifest" href="images/site.webmanifest">
 </head>
-
 <body>
-<!-- Skip to Content Link -->  
+    <!-- Skip to Content Link -->  
 <a class="skip" href="#content">Skip to Content</a>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav">
+	<div id="menu-links">
+		<a href="index.html">Home</a>
+		<a href="about.html">About Us</a>
+		<a href="adopt.html">Adopt</a>
+		<a href="volunteer.html">Volunteer</a>
+		<a href="contact.html">Contact Us</a>
+	</div>
+	<a class="nav-icon" onclick="hamburger()">
+		<div id="icon">&#9776;</div>
+	</a>
+</nav>
 
 <header>
 	<img class="logo" src="images/paw-logo.png" alt="dogs paw print">
-		<h1><a "Great Pyrenees Rescue">Great Pyrenees Rescue</a></h1>
+		<h1>Great Pyrenees Rescue</h1>
 </header>
-
-<nav class="round">
-	<ul>
-		<li><a href="index.html">Home </a></li>
-		<li><a href="about.html">About Us </a></li>
-		<li><a href="adopt.html">Adopt</a></li>
-		<li><a href="volunteer.html">Volunteer</a></li>
-		<li><a href="contact.html">Contact</a></li>
-	</ul>
-</nav>
-
+<div>
+	<nav class="round tab-desk">
+		<ul>
+			<li><a href="index.html">Home </a></li>
+			<li><a href="about.html">About Us </a></li>
+			<li><a href="adopt.html">Adopt</a></li>
+			<li><a href="volunteer.html">Volunteer</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+</div>
 <!-- Hero Image -->
-<div id=>
+<!-- <div id=>
 	<img src="" alt="">
-	</div>
+	</div> -->
 <!--Use the main are to add the main content to the webpage-->
 
 <main id="content">
@@ -80,23 +93,22 @@
 				</fieldset>
 				
 				<input type="submit" id="submit" value="submit" class="btn">
-					
+	</form>
 </main>
 
 
-
-<footer class="round">
+<footer class="round" id="foot">
 	<div class="copyright">
 		<p>&copy; Copyright 2022. All Rights Reserved.</p>
 		<p> Email us at:<a href="mailto:greatpyrrescue.net " target="_blank"> greatpyrrescue.net</a></p>
 	</div>
 	
 	<div class="social">
-      <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="Facebook logo"></a>
-      <a href="https://www.twitter.com" target="_blank"><img src="images/twitter-logo.png" alt="Twitter logo"></a>
-    </div>
+			<a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="black and white Facebook logo"></a>
+			<a href="https://twitter.com" target="_blank"><img src="images/twitter-logo.png" alt="black and white Twitter logo"></a>
+		</div>
+		
 </footer>
-
+<script src="scripts/script.js"></script>
 </body>
-
 </html>

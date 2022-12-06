@@ -18,28 +18,46 @@
 </head>
 
 <body>
-<!-- Skip to Content Link -->  
+    <!-- Skip to Content Link -->  
 <a class="skip" href="#content">Skip to Content</a>
 
-<header>
-	<img class="logo" src="images/paw-logo.png" alt="dogs paw print">
-		<h1><a "Great Pyrenees Rescue">Great Pyrenees Rescue</a></h1>
-</header>
-
-<nav class="round">
-	<ul>
-		<li><a href="index.html">Home </a></li>
-		<li><a href="about.html">About Us </a></li>
-		<li><a href="adopt.html">Adopt</a></li>
-		<li><a href="volunteer.html">Volunteer</a></li>
-		<li><a href="contact.html">Contact</a></li>
-	</ul>
+<!-- Mobile Nav -->
+<nav class="mobile-nav">
+	<div id="menu-links">
+		<a href="index.html">Home</a>
+		<a href="about.html">About Us</a>
+		<a href="adopt.html">Adopt</a>
+		<a href="volunteer.html">Volunteer</a>
+		<a href="contact.html">Contact Us</a>
+	</div>
+	<a class="nav-icon" onclick="hamburger()">
+		<div id="icon">&#9776;</div>
+	</a>
 </nav>
 
+<div>
+	<header>
+		<img class="logo" src="images/paw-logo.png" alt="dogs paw print">
+		<h1>Great Pyrenees Rescue</h1>
+	</header>
+</div>
+
+<div>
+	<nav class="round tab-desk">
+		<ul>
+			<li><a href="index.html">Home </a></li>
+			<li><a href="about.html">About Us </a></li>
+			<li><a href="adopt.html">Adopt</a></li>
+			<li><a href="volunteer.html">Volunteer</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+</div>
+
 <!-- Hero Image -->
-<div id=>
+<!-- <div id=>
 	<img src="" alt="">
-	</div>
+	</div>-->
 <!--Use the main are to add the main content to the webpage-->
 
 <main id="content">
@@ -54,18 +72,20 @@
 	</div>
 </main>
 
-<footer class="round">
+<footer class="round" id="foot">
 	<div class="copyright">
 		<p>&copy; Copyright 2022. All Rights Reserved.</p>
 		<p> Email us at:<a href="mailto:greatpyrrescue.net " target="_blank"> greatpyrrescue.net</a></p>
 	</div>
 	
 	<div class="social">
-      <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="Facebook logo"></a>
-      <a href="https://www.twitter.com" target="_blank"><img src="images/twitter-logo.png" alt="Twitter logo"></a>
-    </div>
+			<a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="black and white Facebook logo"></a>
+			<a href="https://twitter.com" target="_blank"><img src="images/twitter-logo.png" alt="black and white Twitter logo"></a>
+		</div>
+		
 </footer>
-
+<script src="scripts/script.js"></script>
 </body>
+
 
 </html>
